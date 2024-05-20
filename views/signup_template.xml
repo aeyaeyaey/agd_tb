@@ -1,0 +1,27 @@
+<odoo>
+    <template id="auth_signup_fields" inherit_id="auth_signup.fields">
+        <xpath expr="//label[@for='name']/parent::div" position="after">
+            <div class="form-group">
+                <label for="il_id">İl</label>
+                <select id="il_id" name="il_id" class="form-control">
+                    <option value="">İl Seçin</option>
+                    <t t-foreach="ils" t-as="il">
+                        <option t-att-value="il.id" t-esc="il.name"/>
+                    </t>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ilce_id">İlçe</label>
+                <select id="ilce_id" name="ilce_id" class="form-control">
+                    <option value="">Önce İl Seçin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lise_id">Lise</label>
+                <select id="lise_id" name="lise_id" class="form-control">
+                    <option value="">Önce İlçe Seçin</option>
+                </select>
+            </div>
+        </xpath>
+    </template>
+</odoo>

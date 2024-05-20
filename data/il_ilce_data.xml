@@ -1,0 +1,103 @@
+<odoo>
+    <!-- Konya ili ve ilçeleri -->
+    <record id="il_konya" model="agd.il">
+        <field name="name">Konya</field>
+    </record>
+    <record id="ilce_karatay" model="agd.ilce">
+        <field name="name">Karatay</field>
+        <field name="il_id" ref="il_konya"/>
+    </record>
+    <record id="ilce_meram" model="agd.ilce">
+        <field name="name">Meram</field>
+        <field name="il_id" ref="il_konya"/>
+    </record>
+    <record id="ilce_selcuklu" model="agd.ilce">
+        <field name="name">Selçuklu</field>
+        <field name="il_id" ref="il_konya"/>
+    </record>
+
+    <!-- Liseler -->
+    <record id="lise_aselsan_konya" model="agd.lise">
+        <field name="name">ASELSAN Konya Mesleki ve Teknik Anadolu Lisesi</field>
+        <field name="il_id" ref="il_konya"/>
+        <field name="ilce_id" ref="ilce_selcuklu"/>
+    </record>
+    <record id="lise_konya_anadolu" model="agd.lise">
+        <field name="name">Konya Anadolu Lisesi</field>
+        <field name="il_id" ref="il_konya"/>
+        <field name="ilce_id" ref="ilce_meram"/>
+    </record>
+    <record id="lise_konya_fen" model="agd.lise">
+        <field name="name">Konya Fen Lisesi</field>
+        <field name="il_id" ref="il_konya"/>
+        <field name="ilce_id" ref="ilce_karatay"/>
+    </record>
+
+    <!-- Ankara ili ve ilçeleri -->
+    <record id="il_ankara" model="agd.il">
+        <field name="name">Ankara</field>
+    </record>
+    <record id="ilce_cankaya" model="agd.ilce">
+        <field name="name">Çankaya</field>
+        <field name="il_id" ref="il_ankara"/>
+    </record>
+    <record id="ilce_kecioren" model="agd.ilce">
+        <field name="name">Keçiören</field>
+        <field name="il_id" ref="il_ankara"/>
+    </record>
+    <record id="ilce_mamak" model="agd.ilce">
+        <field name="name">Mamak</field>
+        <field name="il_id" ref="il_ankara"/>
+    </record>
+
+    <!-- Liseler -->
+    <record id="lise_cankaya_anadolu" model="agd.lise">
+        <field name="name">Çankaya Anadolu Lisesi</field>
+        <field name="il_id" ref="il_ankara"/>
+        <field name="ilce_id" ref="ilce_cankaya"/>
+    </record>
+    <record id="lise_kecioren" model="agd.lise">
+        <field name="name">Keçiören Lisesi</field>
+        <field name="il_id" ref="il_ankara"/>
+        <field name="ilce_id" ref="ilce_kecioren"/>
+    </record>
+    <record id="lise_mamak_anadolu" model="agd.lise">
+        <field name="name">Mamak Anadolu Lisesi</field>
+        <field name="il_id" ref="il_ankara"/>
+        <field name="ilce_id" ref="ilce_mamak"/>
+    </record>
+
+    <!-- İstanbul ili ve ilçeleri -->
+    <record id="il_istanbul" model="agd.il">
+        <field name="name">İstanbul</field>
+    </record>
+    <record id="ilce_besiktas" model="agd.ilce">
+        <field name="name">Beşiktaş</field>
+        <field name="il_id" ref="il_istanbul"/>
+    </record>
+    <record id="ilce_kadikoy" model="agd.ilce">
+        <field name="name">Kadıköy</field>
+        <field name="il_id" ref="il_istanbul"/>
+    </record>
+    <record id="ilce_uskudar" model="agd.ilce">
+        <field name="name">Üsküdar</field>
+        <field name="il_id" ref="il_istanbul"/>
+    </record>
+
+    <!-- Liseler -->
+    <record id="lise_besiktas_anadolu" model="agd.lise">
+        <field name="name">Beşiktaş Anadolu Lisesi</field>
+        <field name="il_id" ref="il_istanbul"/>
+        <field name="ilce_id" ref="ilce_besiktas"/>
+    </record>
+    <record id="lise_kadikoy_anadolu" model="agd.lise">
+        <field name="name">Kadıköy Anadolu Lisesi</field>
+        <field name="il_id" ref="il_istanbul"/>
+        <field name="ilce_id" ref="ilce_kadikoy"/>
+    </record>
+    <record id="lise_uskudar_amerikan" model="agd.lise">
+        <field name="name">Üsküdar Amerikan Lisesi</field>
+        <field name="il_id" ref="il_istanbul"/>
+        <field name="ilce_id" ref="ilce_uskudar"/>
+    </record>
+</odoo>
