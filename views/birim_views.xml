@@ -5,9 +5,15 @@
         <field name="model">agd.il</field>
         <field name="arch" type="xml">
             <form string="İl">
+                <header>
+                    <button name="action_view_users" type="object" class="oe_stat_button" icon="fa-user">
+                        <field name="user_count" widget="statinfo" string="Öğrenciler"/>
+                    </button>
+                </header>
                 <sheet>
                     <group>
                         <field name="name"/>
+                        <field name="manager_id"/>
                     </group>
                     <notebook>
                         <page string="İlçeler">
@@ -40,6 +46,7 @@
                     <group>
                         <field name="name"/>
                         <field name="il_id"/>
+                        <field name="manager_id"/>
                     </group>
                     <notebook>
                         <page string="Liseler">
@@ -66,6 +73,7 @@
                         <field name="name"/>
                         <field name="il_id"/>
                         <field name="ilce_id" attrs="{'invisible': [('il_id', '=', False)]}"/>
+                        <field name="manager_id"/>
                     </group>
                 </sheet>
             </form>

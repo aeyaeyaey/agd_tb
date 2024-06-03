@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_il,access_il,model_agd_il,,1,1,1,1
-access_ilce,access_ilce,model_agd_ilce,,1,1,1,1
-access_lise,access_lise,model_agd_lise,,1,1,1,1
+access_agd_il,access_agd_il,model_agd_il,,1,1,1,1
+access_agd_ilce,access_agd_ilce,model_agd_ilce,,1,1,1,1
+access_agd_lise,access_agd_lise,model_agd_lise,,1,1,1,1

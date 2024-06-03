@@ -1,6 +1,7 @@
 from odoo import http
 from odoo.http import request
 from odoo.addons.website_profile.controllers.main import WebsiteProfile
+import base64
 
 
 class CustomWebsiteProfile(WebsiteProfile):
@@ -15,12 +16,19 @@ class CustomWebsiteProfile(WebsiteProfile):
             user = request.env['res.users'].browse(user_id)
             values = self._prepare_user_values(searches=kwargs, user=user, is_public_user=False)
         else:
+            user = request.env.user
             values = self._prepare_user_values(searches=kwargs)
+
+        ilces = request.env['agd.ilce'].sudo().search([('il_id', '=', user.il_id.id)]) if user.il_id else []
+        liseler = request.env['agd.lise'].sudo().search([('ilce_id', '=', user.ilce_id.id)]) if user.ilce_id else []
 
         values.update({
             'email_required': kwargs.get('email_required'),
             'countries': countries,
             'ils': ils,
+            'ilces': ilces,
+            'liseler': liseler,
+            'user': user,
             'url_param': kwargs.get('url_param'),
         })
 
@@ -73,3 +81,13 @@ class CustomWebsiteProfile(WebsiteProfile):
             return request.redirect("/profile/user/%d?%s" % (user.id, kwargs['url_param']))
         else:
             return request.redirect("/profile/user/%d" % user.id)
+
+    @http.route('/get_ilce', type='json', auth='user', methods=['POST'], website=True)
+    def get_ilce(self, il_id):
+        ilceler = request.env['agd.ilce'].sudo().search([('il_id', '=', int(il_id))])
+        return [{'id': ilce.id, 'name': ilce.name} for ilce in ilceler]
+
+    @http.route('/get_lise', type='json', auth='user', methods=['POST'], website=True)
+    def get_lise(self, ilce_id):
+        liseler = request.env['agd.lise'].sudo().search([('ilce_id', '=', int(ilce_id))])
+        return [{'id': lise.id, 'name': lise.name} for lise in liseler]
