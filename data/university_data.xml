@@ -1,0 +1,710 @@
+<odoo>
+    <!-- Türkiye'nin Tüm İlleri -->
+    <record id="il_01" model="il">
+        <field name="name">Adana</field>
+    </record>
+    <record id="il_02" model="il">
+        <field name="name">Adıyaman</field>
+    </record>
+    <record id="il_03" model="il">
+        <field name="name">Afyonkarahisar</field>
+    </record>
+    <record id="il_04" model="il">
+        <field name="name">Ağrı</field>
+    </record>
+    <record id="il_05" model="il">
+        <field name="name">Amasya</field>
+    </record>
+    <record id="il_06" model="il">
+        <field name="name">Ankara</field>
+    </record>
+    <record id="il_07" model="il">
+        <field name="name">Antalya</field>
+    </record>
+    <record id="il_08" model="il">
+        <field name="name">Artvin</field>
+    </record>
+    <record id="il_09" model="il">
+        <field name="name">Aydın</field>
+    </record>
+    <record id="il_10" model="il">
+        <field name="name">Balıkesir</field>
+    </record>
+    <record id="il_11" model="il">
+        <field name="name">Bilecik</field>
+    </record>
+    <record id="il_12" model="il">
+        <field name="name">Bingöl</field>
+    </record>
+    <record id="il_13" model="il">
+        <field name="name">Bitlis</field>
+    </record>
+    <record id="il_14" model="il">
+        <field name="name">Bolu</field>
+    </record>
+    <record id="il_15" model="il">
+        <field name="name">Burdur</field>
+    </record>
+    <record id="il_16" model="il">
+        <field name="name">Bursa</field>
+    </record>
+    <record id="il_17" model="il">
+        <field name="name">Çanakkale</field>
+    </record>
+    <record id="il_18" model="il">
+        <field name="name">Çankırı</field>
+    </record>
+    <record id="il_19" model="il">
+        <field name="name">Çorum</field>
+    </record>
+    <record id="il_20" model="il">
+        <field name="name">Denizli</field>
+    </record>
+    <record id="il_21" model="il">
+        <field name="name">Diyarbakır</field>
+    </record>
+    <record id="il_22" model="il">
+        <field name="name">Edirne</field>
+    </record>
+    <record id="il_23" model="il">
+        <field name="name">Elazığ</field>
+    </record>
+    <record id="il_24" model="il">
+        <field name="name">Erzincan</field>
+    </record>
+    <record id="il_25" model="il">
+        <field name="name">Erzurum</field>
+    </record>
+    <record id="il_26" model="il">
+        <field name="name">Eskişehir</field>
+    </record>
+    <record id="il_27" model="il">
+        <field name="name">Gaziantep</field>
+    </record>
+    <record id="il_28" model="il">
+        <field name="name">Giresun</field>
+    </record>
+    <record id="il_29" model="il">
+        <field name="name">Gümüşhane</field>
+    </record>
+    <record id="il_30" model="il">
+        <field name="name">Hakkari</field>
+    </record>
+    <record id="il_31" model="il">
+        <field name="name">Hatay</field>
+    </record>
+    <record id="il_32" model="il">
+        <field name="name">Isparta</field>
+    </record>
+    <record id="il_33" model="il">
+        <field name="name">Mersin</field>
+    </record>
+    <record id="il_34" model="il">
+        <field name="name">İstanbul</field>
+    </record>
+    <record id="il_35" model="il">
+        <field name="name">İzmir</field>
+    </record>
+    <record id="il_36" model="il">
+        <field name="name">Kars</field>
+    </record>
+    <record id="il_37" model="il">
+        <field name="name">Kastamonu</field>
+    </record>
+    <record id="il_38" model="il">
+        <field name="name">Kayseri</field>
+    </record>
+    <record id="il_39" model="il">
+        <field name="name">Kırklareli</field>
+    </record>
+    <record id="il_40" model="il">
+        <field name="name">Kırşehir</field>
+    </record>
+    <record id="il_41" model="il">
+        <field name="name">Kocaeli</field>
+    </record>
+    <record id="il_42" model="il">
+        <field name="name">Konya</field>
+    </record>
+    <record id="il_43" model="il">
+        <field name="name">Kütahya</field>
+    </record>
+    <record id="il_44" model="il">
+        <field name="name">Malatya</field>
+    </record>
+    <record id="il_45" model="il">
+        <field name="name">Manisa</field>
+    </record>
+    <record id="il_46" model="il">
+        <field name="name">Kahramanmaraş</field>
+    </record>
+    <record id="il_47" model="il">
+        <field name="name">Mardin</field>
+    </record>
+    <record id="il_48" model="il">
+        <field name="name">Muğla</field>
+    </record>
+    <record id="il_49" model="il">
+        <field name="name">Muş</field>
+    </record>
+    <record id="il_50" model="il">
+        <field name="name">Nevşehir</field>
+    </record>
+    <record id="il_51" model="il">
+        <field name="name">Niğde</field>
+    </record>
+    <record id="il_52" model="il">
+        <field name="name">Ordu</field>
+    </record>
+    <record id="il_53" model="il">
+        <field name="name">Rize</field>
+    </record>
+    <record id="il_54" model="il">
+        <field name="name">Sakarya</field>
+    </record>
+    <record id="il_55" model="il">
+        <field name="name">Samsun</field>
+    </record>
+    <record id="il_56" model="il">
+        <field name="name">Siirt</field>
+    </record>
+    <record id="il_57" model="il">
+        <field name="name">Sinop</field>
+    </record>
+    <record id="il_58" model="il">
+        <field name="name">Sivas</field>
+    </record>
+    <record id="il_59" model="il">
+        <field name="name">Tekirdağ</field>
+    </record>
+    <record id="il_60" model="il">
+        <field name="name">Tokat</field>
+    </record>
+    <record id="il_61" model="il">
+        <field name="name">Trabzon</field>
+    </record>
+    <record id="il_62" model="il">
+        <field name="name">Tunceli</field>
+    </record>
+    <record id="il_63" model="il">
+        <field name="name">Şanlıurfa</field>
+    </record>
+    <record id="il_64" model="il">
+        <field name="name">Uşak</field>
+    </record>
+    <record id="il_65" model="il">
+        <field name="name">Van</field>
+    </record>
+    <record id="il_66" model="il">
+        <field name="name">Yozgat</field>
+    </record>
+    <record id="il_67" model="il">
+        <field name="name">Zonguldak</field>
+    </record>
+    <record id="il_68" model="il">
+        <field name="name">Aksaray</field>
+    </record>
+    <record id="il_69" model="il">
+        <field name="name">Bayburt</field>
+    </record>
+    <record id="il_70" model="il">
+        <field name="name">Karaman</field>
+    </record>
+    <record id="il_71" model="il">
+        <field name="name">Kırıkkale</field>
+    </record>
+    <record id="il_72" model="il">
+        <field name="name">Batman</field>
+    </record>
+    <record id="il_73" model="il">
+        <field name="name">Şırnak</field>
+    </record>
+    <record id="il_74" model="il">
+        <field name="name">Bartın</field>
+    </record>
+    <record id="il_75" model="il">
+        <field name="name">Ardahan</field>
+    </record>
+    <record id="il_76" model="il">
+        <field name="name">Iğdır</field>
+    </record>
+    <record id="il_77" model="il">
+        <field name="name">Yalova</field>
+    </record>
+    <record id="il_78" model="il">
+        <field name="name">Karabük</field>
+    </record>
+    <record id="il_79" model="il">
+        <field name="name">Kilis</field>
+    </record>
+    <record id="il_80" model="il">
+        <field name="name">Osmaniye</field>
+    </record>
+    <record id="il_81" model="il">
+        <field name="name">Düzce</field>
+    </record>
+
+    <!-- İstanbul'un İlçeleri -->
+    <record id="ilce_34001" model="ilce">
+        <field name="name">Adalar</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34002" model="ilce">
+        <field name="name">Arnavutköy</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34003" model="ilce">
+        <field name="name">Ataşehir</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34004" model="ilce">
+        <field name="name">Avcılar</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34005" model="ilce">
+        <field name="name">Bağcılar</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34006" model="ilce">
+        <field name="name">Bahçelievler</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34007" model="ilce">
+        <field name="name">Bakırköy</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34008" model="ilce">
+        <field name="name">Başakşehir</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34009" model="ilce">
+        <field name="name">Bayrampaşa</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34010" model="ilce">
+        <field name="name">Beşiktaş</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34011" model="ilce">
+        <field name="name">Beykoz</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34012" model="ilce">
+        <field name="name">Beylikdüzü</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34013" model="ilce">
+        <field name="name">Beyoğlu</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34014" model="ilce">
+        <field name="name">Büyükçekmece</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34015" model="ilce">
+        <field name="name">Çatalca</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34016" model="ilce">
+        <field name="name">Çekmeköy</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34017" model="ilce">
+        <field name="name">Esenler</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34018" model="ilce">
+        <field name="name">Esenyurt</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34019" model="ilce">
+        <field name="name">Eyüpsultan</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34020" model="ilce">
+        <field name="name">Fatih</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34021" model="ilce">
+        <field name="name">Gaziosmanpaşa</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34022" model="ilce">
+        <field name="name">Güngören</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34023" model="ilce">
+        <field name="name">Kadıköy</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34024" model="ilce">
+        <field name="name">Kağıthane</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34025" model="ilce">
+        <field name="name">Kartal</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34026" model="ilce">
+        <field name="name">Küçükçekmece</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34027" model="ilce">
+        <field name="name">Maltepe</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34028" model="ilce">
+        <field name="name">Pendik</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34029" model="ilce">
+        <field name="name">Sancaktepe</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34030" model="ilce">
+        <field name="name">Sarıyer</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34031" model="ilce">
+        <field name="name">Silivri</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34032" model="ilce">
+        <field name="name">Sultanbeyli</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34033" model="ilce">
+        <field name="name">Sultangazi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34034" model="ilce">
+        <field name="name">Şile</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34035" model="ilce">
+        <field name="name">Şişli</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34036" model="ilce">
+        <field name="name">Tuzla</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34037" model="ilce">
+        <field name="name">Ümraniye</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34038" model="ilce">
+        <field name="name">Üsküdar</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+    <record id="ilce_34039" model="ilce">
+        <field name="name">Zeytinburnu</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <!-- İstanbul'daki Tüm Üniversiteler -->
+
+
+
+
+    <record id="lise_mamak_anadolu" model="agd.lise">
+        <field name="name">Mamak Anadolu Lisesi</field>
+        <field name="il_id" ref="il_ankara"/>
+        <field name="ilce_id" ref="ilce_mamak"/>
+    </record>
+
+    <record id="uni_acıbadem" model="agd.lise">
+        <field name="name">Acıbadem Mehmet Ali Aydınlar Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+     <record id="uni_altinbas" model="agd.lise">
+        <field name="name">Altınbaş Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+     <record id="uni_atasehir" model="agd.lise">
+        <field name="name">Ataşehir Adıgüzel Meslek Yüksekokulu</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+     <record id="uni_bahcesehir" model="agd.lise">
+        <field name="name">Bahçeşehir Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_beykoz" model="agd.lise">
+        <field name="name">Beykoz Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_bezmialem" model="agd.lise">
+        <field name="name">Bezm-i Alem Vakıf Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_biruni" model="agd.lise">
+        <field name="name">Biruni Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_bogazici" model="agd.lise">
+        <field name="name">Boğaziçi Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_demiroglu" model="agd.lise">
+        <field name="name">Demiroğlu Bilim Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_dogus" model="agd.lise">
+        <field name="name">Doğuş Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_fsm" model="agd.lise">
+        <field name="name">Fatih Sultan Mehmet Vakıf Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_fenerbahce" model="agd.lise">
+        <field name="name">Fenerbahçe Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_galatasaray" model="agd.lise">
+        <field name="name">Galatasaray Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_halic" model="agd.lise">
+        <field name="name">Haliç Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_isik" model="agd.lise">
+        <field name="name">Işık Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_ibnhaldun" model="agd.lise">
+        <field name="name">İbn Haldun Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_arel" model="agd.lise">
+        <field name="name">İstanbul Arel Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_aydin" model="agd.lise">
+        <field name="name">İstanbul Aydın Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_beykent" model="agd.lise">
+        <field name="name">İstanbul Beykent Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_bilgi" model="agd.lise">
+        <field name="name">İstanbul Bilgi Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_esenyurt" model="agd.lise">
+        <field name="name">İstanbul Esenyurt Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_galata" model="agd.lise">
+        <field name="name">İstanbul Galata Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_gedik" model="agd.lise">
+        <field name="name">İstanbul Gedik Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_gelisim" model="agd.lise">
+        <field name="name">İstanbul Gelişim Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_kent" model="agd.lise">
+        <field name="name">İstanbul Kent Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_kültür" model="agd.lise">
+        <field name="name">İstanbul Kültür Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_medeniyet" model="agd.lise">
+        <field name="name">İstanbul Medeniyet Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_medipol" model="agd.lise">
+        <field name="name">İstanbul Medipol Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_nisantasi" model="agd.lise">
+        <field name="name">İstanbul Nişantaşı Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_okan" model="agd.lise">
+        <field name="name">İstanbul Okan Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_rumeli" model="agd.lise">
+        <field name="name">İstanbul Rumeli Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_zaim" model="agd.lise">
+        <field name="name">İstanbul Sabahattin Zaim Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_sağlıkmyo" model="agd.lise">
+        <field name="name">İstanbul Sağlık ve Sosyal Bilimler Meslek Yüksekokulu</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_sağlık" model="agd.lise">
+        <field name="name">İstanbul Sağlık ve Teknoloji Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_sislimyo" model="agd.lise">
+        <field name="name">İstanbul Şişli Meslek Yüksekokulu</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_itü" model="agd.lise">
+        <field name="name">İstanbul Teknik Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_ticaret" model="agd.lise">
+        <field name="name">İstanbul Ticaret Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_topkapı" model="agd.lise">
+        <field name="name">İstanbul Topkapı Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_istanbul" model="agd.lise">
+        <field name="name">İstanbul Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_istanbulcerrahpasa" model="agd.lise">
+        <field name="name">İstanbul Üniversitesi - Cerrahpaşa</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_yeniyuzyil" model="agd.lise">
+        <field name="name">İstanbul Yeni Yüzyıl Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_29mayis" model="agd.lise">
+        <field name="name">İstanbul 29 Mayıs Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_istinye" model="agd.lise">
+        <field name="name">İstinye Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_kadirhas" model="agd.lise">
+        <field name="name">Kadir Has Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_koc" model="agd.lise">
+        <field name="name">Koç Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_maltepe" model="agd.lise">
+        <field name="name">Maltepe Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_marmara" model="agd.lise">
+        <field name="name">Marmara Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_mef" model="agd.lise">
+        <field name="name">MEF Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_mimarsinan" model="agd.lise">
+        <field name="name">Mimar Sinan Güzel Sanatlar Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_ozyegin" model="agd.lise">
+        <field name="name">Özyeğin Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_pirireis" model="agd.lise">
+        <field name="name">Piri Reis Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_sabanci" model="agd.lise">
+        <field name="name">Sabancı Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_sağlıkbil" model="agd.lise">
+        <field name="name">Sağlık Bilimleri Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_türkalman" model="agd.lise">
+        <field name="name">Türk-Alman Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_islam" model="agd.lise">
+        <field name="name">Türkiye Uluslararası İslam, Bilim ve Teknoloji Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_türkjapon" model="agd.lise">
+        <field name="name">Türk-Japon Bilim ve Teknoloji Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_uskudar" model="agd.lise">
+        <field name="name">Üsküdar Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_yeditepe" model="agd.lise">
+        <field name="name">Yeditepe Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+
+    <record id="uni_ytü" model="agd.lise">
+        <field name="name">Yıldız Teknik Üniversitesi</field>
+        <field name="il_id" ref="il_34"/>
+    </record>
+</odoo>

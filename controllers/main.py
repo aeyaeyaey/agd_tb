@@ -31,6 +31,7 @@ class CustomWebsiteProfile(WebsiteProfile):
             'name': kwargs.get('name'),
             'website': kwargs.get('website'),
             'email': kwargs.get('email'),
+            'twitter_account': kwargs.get('twitter_account'),
             'il_id': int(kwargs.get('il_id')) if kwargs.get('il_id') else False,
             'ilce_id': int(kwargs.get('ilce_id')) if kwargs.get('ilce_id') else False,
             'lise_id': int(kwargs.get('lise_id')) if kwargs.get('lise_id') else False,
@@ -66,6 +67,8 @@ class CustomWebsiteProfile(WebsiteProfile):
             whitelisted_values['ilce_id'] = values['ilce_id']
         if 'lise_id' in values:
             whitelisted_values['lise_id'] = values['lise_id']
+        if 'twitter_account' in values:
+            whitelisted_values['twitter_account'] = values['twitter_account']
 
         user.write(whitelisted_values)
 

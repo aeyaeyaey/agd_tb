@@ -1,0 +1,46 @@
+<odoo>
+    <!-- Üniversiteler -->
+    <record id="uni_odoo" model="agd.uni">
+        <field name="name">Odoo Üniversitesi</field>
+    </record>
+
+    <record id="uni_python" model="agd.uni">
+        <field name="name">Python Üniversitesi</field>
+    </record>
+
+    <!-- Fakülteler -->
+    <record id="fak_muhendislik" model="agd.fak">
+        <field name="name">Mühendislik Fakültesi</field>
+        <field name="uni_id" ref="uni_odoo"/>
+    </record>
+
+    <record id="fak_isletme" model="agd.fak">
+        <field name="name">İşletme Fakültesi</field>
+        <field name="uni_id" ref="uni_python"/>
+    </record>
+
+    <!-- Bölümler -->
+    <record id="bolum_bilgisayar" model="agd.bolum">
+        <field name="name">Bilgisayar Mühendisliği</field>
+        <field name="uni_id" ref="uni_odoo"/>
+        <field name="fak_id" ref="fak_muhendislik"/>
+    </record>
+
+    <record id="bolum_makine" model="agd.bolum">
+        <field name="name">Makine Mühendisliği</field>
+        <field name="uni_id" ref="uni_odoo"/>
+        <field name="fak_id" ref="fak_muhendislik"/>
+    </record>
+
+    <record id="bolum_isletme" model="agd.bolum">
+        <field name="name">İşletme</field>
+        <field name="uni_id" ref="uni_python"/>
+        <field name="fak_id" ref="fak_isletme"/>
+    </record>
+
+    <record id="bolum_iktisat" model="agd.bolum">
+        <field name="name">İktisat</field>
+        <field name="uni_id" ref="uni_python"/>
+        <field name="fak_id" ref="fak_isletme"/>
+    </record>
+</odoo>

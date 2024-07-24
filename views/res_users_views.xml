@@ -1,14 +1,4 @@
 <odoo>
-    <record id="view_users_form" model="ir.ui.view">
-        <field name="name">res.users.form</field>
-        <field name="model">res.users</field>
-        <field name="inherit_id" ref="base.view_users_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//form/sheet" position="inside">
-                <button name="action_grant_karma" type="object" string="Grant 10 Karma" class="btn-primary"/>
-            </xpath>
-        </field>
-    </record>
 
     <record id="view_users_form_inherit_agd" model="ir.ui.view">
         <field name="name">res.users.form.inherit.agd</field>
@@ -18,7 +8,16 @@
             <xpath expr="//field[@name='mobile']" position="after">
                 <field name="il_id" string="İl"/>
                 <field name="ilce_id" string="İlçe"/>
-                <field name="lise_id" string="Lise"/>
+                <field name="ilce_id" string="İlçe"/>
+                <field name="ilce_id" string="İlçe"/>
+                <field name="ilce_id" string="İlçe"/>
+                <field name="ilce_id" string="İlçe"/>
+                <field name="ilce_id" string="İlçe"/>
+                <field name="ilce_id" string="İlçe"/>
+
+
+
+
             </xpath>
         </field>
     </record>
@@ -35,7 +34,7 @@
                 <field name="phone"/>
                 <field name="il_id" string="İl"/>
                 <field name="ilce_id" string="İlçe"/>
-                <field name="lise_id" string="Lise"/>
+
             </tree>
         </field>
     </record>

@@ -65,6 +65,7 @@ class Lise(models.Model):
     manager_id = fields.Many2one('res.users', string='Yönetici', domain="[('groups_id', 'in', [1])]")  # 1 is the ID of the internal user group
     user_ids = fields.One2many('res.users', 'lise_id', string='Öğrenciler')
     user_count = fields.Integer(string='Öğrenci Sayısı', compute='_compute_user_count')
+    adres = fields.Char(string='adres', required=True)
 
     @api.depends('user_ids')
     def _compute_user_count(self):
@@ -81,3 +82,94 @@ class Lise(models.Model):
             'domain': [('lise_id', '=', self.id)],
             'context': dict(self.env.context, create=False)
         }
+
+
+# ------------------------------------------------------------------------------------------------------------------
+
+
+class Uni(models.Model):
+    _name = 'agd.uni'
+    _description = 'Üniversite'
+
+    name = fields.Char(string='Name', required=True)
+    fak_ids = fields.One2many('agd.fak', 'uni_id', string='Fakülteler')
+    bolum_ids = fields.One2many('agd.bolum', 'uni_id', string='Bölümler')
+    # manager_id = fields.Many2one('res.users', string='Yönetici', domain="[('groups_id', 'in', [1])]")  # 1 is the ID of the internal user group
+    # user_ids = fields.One2many('res.users', 'uni_id', string='Öğrenciler')
+    # user_count = fields.Integer(string='Öğrenci Sayısı', compute='_compute_user_count')
+
+    # @api.depends('user_ids')
+    # def _compute_user_count(self):
+    #     for uni in self:
+    #         uni.user_count = len(uni.user_ids)
+    #
+    # def action_view_users(self):
+    #     self.ensure_one()
+    #     return {
+    #         'type': 'ir.actions.act_window',
+    #         'name': 'Üniversitedeki Öğrenciler',
+    #         'res_model': 'res.users',
+    #         'view_mode': 'tree',
+    #         'domain': [('uni_id', '=', self.id)],
+    #         'context': dict(self.env.context, create=False)
+    #     }
+
+class Fak(models.Model):
+    _name = 'agd.fak'
+    _description = 'Fakülte'
+
+    name = fields.Char(string='Name', required=True)
+    uni_id = fields.Many2one('agd.uni', string='Üniversite', required=True)
+    bolum_ids = fields.One2many('agd.bolum', 'fak_id', string='Bölümler')
+    # manager_id = fields.Many2one('res.users', string='Yönetici', domain="[('groups_id', 'in', [1])]")  # 1 is the ID of the internal user group
+    # user_ids = fields.One2many('res.users', 'fak_id', string='Öğrenciler')
+    # user_count = fields.Integer(string='Öğrenci Sayısı', compute='_compute_user_count')
+    #
+    # @api.depends('user_ids')
+    # def _compute_user_count(self):
+    #     for fak in self:
+    #         fak.user_count = len(fak.user_ids)
+    #
+    # def action_view_users(self):
+    #     self.ensure_one()
+    #     return {
+    #         'type': 'ir.actions.act_window',
+    #         'name': 'Fakültedeki Öğrenciler',
+    #         'res_model': 'res.users',
+    #         'view_mode': 'tree,form',
+    #         'view_id': self.env.ref('agd.view_fak_users_tree').id,
+    #         'domain': [('fak_id', '=', self.id)],
+    #         'context': dict(self.env.context, create=False)
+    #     }
+
+class Bolum(models.Model):
+    _name = 'agd.bolum'
+    _description = 'Bölüm'
+
+    name = fields.Char(string='Name', required=True)
+    uni_id = fields.Many2one('agd.uni', string='Üniversite', required=True)
+    fak_id = fields.Many2one('agd.fak', string='Fakülte')
+    # manager_id = fields.Many2one('res.users', string='Yönetici', domain="[('groups_id', 'in', [1])]")  # 1 is the ID of the internal user group
+    # user_ids = fields.One2many('res.users', 'bolum_id', string='Öğrenciler')
+    # user_count = fields.Integer(string='Öğrenci Sayısı', compute='_compute_user_count')
+    #
+    # @api.depends('user_ids')
+    # def _compute_user_count(self):
+    #     for bolum in self:
+    #         bolum.user_count = len(bolum.user_ids)
+    #
+    # def action_view_users(self):
+    #     self.ensure_one()
+    #     return {
+    #         'type': 'ir.actions.act_window',
+    #         'name': 'Bölümdeki Öğrenciler',
+    #         'res_model': 'res.users',
+    #         'view_mode': 'tree,form',
+    #         'domain': [('bolum_id', '=', self.id)],
+    #         'context': dict(self.env.context, create=False)
+    #     }
+
+
+
+
+

@@ -2,3 +2,8 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_agd_il,access_agd_il,model_agd_il,,1,1,1,1
 access_agd_ilce,access_agd_ilce,model_agd_ilce,,1,1,1,1
 access_agd_lise,access_agd_lise,model_agd_lise,,1,1,1,1
+access_agd_uni,access_agd_uni,model_agd_uni,,1,1,1,1
+access_agd_fak,access_agd_fak,model_agd_fak,,1,1,1,1
+access_agd_bolum,access_agd_bolum,model_agd_bolum,,1,1,1,1
+access_res_users,access_res_users,model_res_users,base.group_user,1,1,1,1
+access_res_partner,access_res_partner,model_res_partner,base.group_user,1,1,1,1

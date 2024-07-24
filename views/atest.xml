@@ -1,0 +1,149 @@
+<odoo>
+    <!-- Form view for uni -->
+    <record id="view_uni_form" model="ir.ui.view">
+        <field name="name">uni.form</field>
+        <field name="model">agd.uni</field>
+        <field name="arch" type="xml">
+            <form string="uni">
+                <header>
+                    <button name="action_view_users" type="object" class="oe_stat_button" icon="fa-user">
+                        <field name="user_count" widget="statinfo" string="Öğrenciler"/>
+                    </button>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="manager_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Fakülteler">
+                            <field name="fak_ids">
+                                <tree string="Fakülteler">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Bölümler">
+                            <field name="bolum_ids">
+                                <tree string="Bölümler">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Form view for Fakülte -->
+    <record id="view_fak_form" model="ir.ui.view">
+        <field name="name">fak.form</field>
+        <field name="model">agd.fak</field>
+        <field name="arch" type="xml">
+            <form string="Fakülte">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="uni_id"/>
+                        <field name="manager_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Bölümler">
+                            <field name="bolum_ids">
+                                <tree string="Bölümler">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Form view for bolum -->
+    <record id="view_bolum_form" model="ir.ui.view">
+        <field name="name">bolum.form</field>
+        <field name="model">agd.bolum</field>
+        <field name="arch" type="xml">
+            <form string="bolum">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="uni_id"/>
+                        <field name="fak_id" attrs="{'invisible': [('uni_id', '=', False)]}"/>
+                        <field name="manager_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree views for each model -->
+    <record id="view_uni_tree" model="ir.ui.view">
+        <field name="name">uni.tree</field>
+        <field name="model">agd.uni</field>
+        <field name="arch" type="xml">
+            <tree string="Üniversiteler">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_fak_tree" model="ir.ui.view">
+        <field name="name">fak.tree</field>
+        <field name="model">agd.fak</field>
+        <field name="arch" type="xml">
+            <tree string="Fakülteler">
+                <field name="name"/>
+                <field name="uni_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_bolum_tree" model="ir.ui.view">
+        <field name="name">bolum.tree</field>
+        <field name="model">agd.bolum</field>
+        <field name="arch" type="xml">
+            <tree string="Bölümler">
+                <field name="name"/>
+                <field name="uni_id"/>
+                <field name="fak_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Actions for each model -->
+    <record id="action_uni" model="ir.actions.act_window">
+        <field name="name">Üniversiteler</field>
+        <field name="res_model">agd.uni</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_uni_tree"/>
+    </record>
+
+    <record id="action_fak" model="ir.actions.act_window">
+        <field name="name">Fakülteler</field>
+        <field name="res_model">agd.fak</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_fak_tree"/>
+    </record>
+
+    <record id="action_bolum" model="ir.actions.act_window">
+        <field name="name">Bölümler</field>
+        <field name="res_model">agd.bolum</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_bolum_tree"/>
+    </record>
+
+<!--    Üniversite, Bölüm, Fakülte-->
+
+
+
+    <!-- Menu items -->
+    <menuitem id="menu_agd_root" name="AGD" sequence="1"/>
+
+    <menuitem id="menu_agd_uni" name="Üniversiteler" parent="menu_agd_root" action="action_uni" sequence="2"/>
+    <menuitem id="menu_agd_fak" name="Fakülteler" parent="menu_agd_root" action="action_fak" sequence="3"/>
+    <menuitem id="menu_agd_bolum" name="Bölümler" parent="menu_agd_root" action="action_bolum" sequence="4"/>
+</odoo>
